@@ -8,6 +8,7 @@
 
 
 void calc_prog_1(char *host, int x, int y, int op){
+	printf("\n");
 	CLIENT *clnt;
 	int  *result_1;
 	numbers  add_1_arg;
@@ -104,7 +105,6 @@ int main (int argc, char *argv[]){
 		exit (1);
 	}
 	host = argv[1];
-	printf("\n\n");
 	calc_prog_1(host, atoi(argv[2]), atoi(argv[3]), menu());
 exit (0);
 }
