@@ -29,7 +29,7 @@ void calc_prog_1(char *host, int x, int y, int op){
 	add_1_arg.a = sub_1_arg.a = mult_1_arg.a = div_1_arg.a = x;
 	add_1_arg.b = sub_1_arg.b = mult_1_arg.b = div_1_arg.b = y;
 
-	if (op == 1)
+	if (op == 1 || op==0)
 	{
 		result_1 = add_1(&add_1_arg, clnt);
 		if (result_1 == (int *)NULL)
@@ -41,7 +41,7 @@ void calc_prog_1(char *host, int x, int y, int op){
 			printf("Resultado Soma:%d\n", *result_1);
 		}
 	}
-	if (op == 2)
+	if (op == 2 || op==0)
 	{
 		result_2 = sub_1(&sub_1_arg, clnt);
 		if (result_2 == (int *)NULL)
@@ -53,7 +53,7 @@ void calc_prog_1(char *host, int x, int y, int op){
 			printf("Resultado Subtracao:%d\n", *result_2);
 		}
 	}
-	if (op == 3)
+	if (op == 3 || op==0)
 	{
 		result_3 = mult_1(&mult_1_arg, clnt);
 		if (result_3 == (int *)NULL)
@@ -65,7 +65,7 @@ void calc_prog_1(char *host, int x, int y, int op){
 			printf("Resultado Multplicacao:%d\n", *result_3);
 		}
 	}
-	if (op == 4)
+	if (op == 4 || op==0)
 	{
 		result_4 = div_1(&div_1_arg, clnt);
 		if (result_4 == (float *)NULL)
@@ -77,48 +77,6 @@ void calc_prog_1(char *host, int x, int y, int op){
 			printf("Resultado Divisao:%f\n", *result_4);
 		}
 	}
-
-	if (op == 0){
-		result_1 = add_1(&add_1_arg, clnt);
-		if (result_1 == (int *)NULL)
-		{
-			clnt_perror(clnt, "call failed");
-		}
-		else
-		{
-			printf("Resultado Soma:%d\n", *result_1);
-		}
-		result_2 = sub_1(&sub_1_arg, clnt);
-		if (result_2 == (int *)NULL)
-		{
-			clnt_perror(clnt, "call failed");
-		}
-		else
-		{
-			printf("Resultado Subtracao:%d\n", *result_2);
-		}
-
-		result_3 = mult_1(&mult_1_arg, clnt);
-		if (result_3 == (int *)NULL)
-		{
-			clnt_perror(clnt, "call failed");
-		}
-		else
-		{
-			printf("Resultado Multplicacao:%d\n", *result_3);
-		}
-
-		result_4 = div_1(&div_1_arg, clnt);
-		if (result_4 == (float *)NULL)
-		{
-			clnt_perror(clnt, "call failed");
-		}
-		else
-		{
-			printf("Resultado Float:%f\n", *result_4);
-		}
-	}
-
 #ifndef	DEBUG
 	clnt_destroy (clnt);
 #endif	 /* DEBUG */
