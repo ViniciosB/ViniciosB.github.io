@@ -15,8 +15,8 @@ extern "C" {
 
 
 struct numbers {
-	int a;
-	int b;
+	float a;
+	float b;
 };
 typedef struct numbers numbers;
 
@@ -25,14 +25,14 @@ typedef struct numbers numbers;
 
 #if defined(__STDC__) || defined(__cplusplus)
 #define ADD 1
-extern  int * add_1(numbers *, CLIENT *);
-extern  int * add_1_svc(numbers *, struct svc_req *);
+extern  float * add_1(numbers *, CLIENT *);
+extern  float * add_1_svc(numbers *, struct svc_req *);
 #define SUB 2
-extern  int * sub_1(numbers *, CLIENT *);
-extern  int * sub_1_svc(numbers *, struct svc_req *);
+extern  float * sub_1(numbers *, CLIENT *);
+extern  float * sub_1_svc(numbers *, struct svc_req *);
 #define MUlT 3
-extern  int * mult_1(numbers *, CLIENT *);
-extern  int * mult_1_svc(numbers *, struct svc_req *);
+extern  float * mult_1(numbers *, CLIENT *);
+extern  float * mult_1_svc(numbers *, struct svc_req *);
 #define DIV 4
 extern  float * div_1(numbers *, CLIENT *);
 extern  float * div_1_svc(numbers *, struct svc_req *);
@@ -40,14 +40,14 @@ extern int calc_prog_1_freeresult (SVCXPRT *, xdrproc_t, caddr_t);
 
 #else /* K&R C */
 #define ADD 1
-extern  int * add_1();
-extern  int * add_1_svc();
+extern  float * add_1();
+extern  float * add_1_svc();
 #define SUB 2
-extern  int * sub_1();
-extern  int * sub_1_svc();
+extern  float * sub_1();
+extern  float * sub_1_svc();
 #define MUlT 3
-extern  int * mult_1();
-extern  int * mult_1_svc();
+extern  float * mult_1();
+extern  float * mult_1_svc();
 #define DIV 4
 extern  float * div_1();
 extern  float * div_1_svc();

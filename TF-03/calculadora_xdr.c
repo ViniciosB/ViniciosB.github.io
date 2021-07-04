@@ -10,9 +10,9 @@ xdr_numbers (XDR *xdrs, numbers *objp)
 {
 	register int32_t *buf;
 
-	 if (!xdr_int (xdrs, &objp->a))
+	 if (!xdr_float (xdrs, &objp->a))
 		 return FALSE;
-	 if (!xdr_int (xdrs, &objp->b))
+	 if (!xdr_float (xdrs, &objp->b))
 		 return FALSE;
 	return TRUE;
 }

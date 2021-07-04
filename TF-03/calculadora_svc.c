@@ -36,19 +36,19 @@ calc_prog_1(struct svc_req *rqstp, register SVCXPRT *transp)
 
 	case ADD:
 		_xdr_argument = (xdrproc_t) xdr_numbers;
-		_xdr_result = (xdrproc_t) xdr_int;
+		_xdr_result = (xdrproc_t) xdr_float;
 		local = (char *(*)(char *, struct svc_req *)) add_1_svc;
 		break;
 
 	case SUB:
 		_xdr_argument = (xdrproc_t) xdr_numbers;
-		_xdr_result = (xdrproc_t) xdr_int;
+		_xdr_result = (xdrproc_t) xdr_float;
 		local = (char *(*)(char *, struct svc_req *)) sub_1_svc;
 		break;
 
 	case MUlT:
 		_xdr_argument = (xdrproc_t) xdr_numbers;
-		_xdr_result = (xdrproc_t) xdr_int;
+		_xdr_result = (xdrproc_t) xdr_float;
 		local = (char *(*)(char *, struct svc_req *)) mult_1_svc;
 		break;
 
