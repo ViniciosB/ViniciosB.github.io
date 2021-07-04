@@ -3,13 +3,8 @@
  * These are only templates and you can use them
  * as a guideline for developing your own functions.
  */
-
 #include "calculadora.h"
-
-
-void
-calc_prog_1(char *host, float x, float y, int op)
-{
+void calc_prog_1(char *host, float x, float y, int op){
 	CLIENT *clnt;
 	float  *result_1;
 	numbers  add_1_arg;
@@ -94,8 +89,6 @@ int menu(){
 	scanf("%d", &x);
 	return x;
 }
-
-
 
 int main (int argc, char *argv[]){
 	char *host;
