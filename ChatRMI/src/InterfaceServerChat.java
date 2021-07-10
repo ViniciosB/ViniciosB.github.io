@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
 * @author vinic
 * @see InterfaceServerChat
-* Interface responsavel por instancias as funçoes a serem usadas na aplicação.
+* Interface responsavel por instancias as funcoes a serem usadas na aplicacao.
 */
 
 

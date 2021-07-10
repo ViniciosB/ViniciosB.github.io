@@ -15,7 +15,7 @@ public class ServerChatFunctions extends java.rmi.server.UnicastRemoteObject imp
 	* @see ServerChatFunctions
 	* Metodo resposavel por realizar o construtor da classe.
 	* 
-	* @return não retorna nada.
+	* @return nao retorna nada.
 	*/
 	
 	public ServerChatFunctions() throws RemoteException {
@@ -27,7 +27,7 @@ public class ServerChatFunctions extends java.rmi.server.UnicastRemoteObject imp
 	* @see enviar
 	* Metodo resposavel por receber a mensagem digitada pelo usuario e enviada ao servidor, adicionar ao arraylis e imprimir no servidor o conteudo.
 	* @param mensagem uma mensagem digitada pelo usuario e enviada ao servidor em formato de string.
-	* @return não retorna nada.
+	* @return nao retorna nada.
 	*/
 	
 	public void enviar(String mensagem) throws RemoteException {
@@ -37,7 +37,7 @@ public class ServerChatFunctions extends java.rmi.server.UnicastRemoteObject imp
 	
 	/**
 	* @see Sincronia
-	* Metodo resposavel por devolver a a mensagem digitada por um usuario qualquer do servidor para a aplicação de outro usuario, podemos descrever como uma sincronia de mensagens.
+	* Metodo resposavel por devolver a a mensagem digitada por um usuario qualquer do servidor para a aplicacao de outro usuario, podemos descrever como uma sincronia de mensagens.
 	* @param mensagens Mensagens trocadas sao armazenadas no arraylist de Strings.
 	* @return um arraylist de mensagens.
 	*/
