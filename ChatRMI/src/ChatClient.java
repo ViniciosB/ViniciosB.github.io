@@ -48,7 +48,7 @@ public class ChatClient {
 								if (msg.indexOf(nome + ":") == -1) {
 									System.out.println(chat.Sincronia().get(chat.Sincronia().size() - 1));
 								}
-								System.out.println("cont" + cont);
+								//System.out.println("cont" + cont);
 								cont++;
 							}
 
