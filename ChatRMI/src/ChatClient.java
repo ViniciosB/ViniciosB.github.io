@@ -77,6 +77,7 @@ public class ChatClient {
 						}
 
 					}
+					Runtime.getRuntime().exit(0);
 				}
 			});
 			thread2.start();
