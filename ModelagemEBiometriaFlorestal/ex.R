@@ -28,3 +28,4 @@ for(i in 1:length(mes)){
 
 dfr<-data.frame(Mes=M,Temperatura=Temp);dfr #renomear colunas e printar dataframe resultante
 
+
