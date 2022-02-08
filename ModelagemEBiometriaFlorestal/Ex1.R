@@ -11,6 +11,7 @@ y<-df[df$mes=="Janeiro", ]          #busca
 z<-df[df$mes=="Novembro", ]         #busca
 dfr<-rbind(x,y,z)                   #merge dados encontrados
 dfr                                 #print dataframe resultante
+
 ################################################################################
 #2 forma
 rm(list=ls(all=TRUE))
@@ -50,6 +51,7 @@ for(i in 1:length(vem)){
   Temp[length(Temp)+1]=df$Temperatura[index]  #calcula posicao e insere no array temperatura
 }
 dfr<-data.frame(Mes=M,Temperatura=Temp);dfr   #renomear colunas e printar dataframe resultante
+
 ####################################################################
 #4 forma
 rm(list=ls(all=TRUE))
@@ -65,3 +67,4 @@ M=df$mes[vem]                #transfere array mes
 Temp=df$Temperatura[vem]  #transfere array temperatura
 
 dfr<-data.frame(Mes=M,Temperatura=Temp);dfr   #renomear colunas e printar dataframe resultante
+
